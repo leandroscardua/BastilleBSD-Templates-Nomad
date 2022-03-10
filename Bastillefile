@@ -2,5 +2,5 @@ ARG version=dev
 ARG bind=0.0.0.0
 ARG log-level=INFO
 ARG network-interface=vtnet0
-PKG nomad
+PKG ca_root_nss nomad
 CMD nomad agent -"${version}" -bind "${bind}" -log-level "${log-level}" -network-interface "${network-interface}"
